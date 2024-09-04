@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>Create Task</title>
+    <link rel="stylesheet" href="{% static 'css/createlist.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <ul> 
+            <li><a href="{% url 'task_list' %}">Task List</a></li>
+            <li><a href="{% url 'task_create' %}">Create Task</a></li>
+            <li><a href="#"> Github</a></li>
+            <li><a href = '#'> Linked in </a></li>
+        </ul>
+    </nav>
+    
+    <div class="task">
+        <h1>Create Task</h1>
+        
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}  <!-- Render form fields -->
+            <button type="submit" class="create-button">Create Task</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Task List</h3>
+            <p>Creating exceptional experiences through technology and design.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

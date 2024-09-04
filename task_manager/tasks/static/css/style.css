@@ -1,0 +1,239 @@
+body {
+    background-color: #f0f4f8; /* Light grayish-blue background for the whole page */
+    font-family: Arial, sans-serif; /* Use a clean and modern font */
+}
+body {
+    background-color: #f0f4f8; /* Light grayish-blue background for the whole page */
+    font-family: Arial, sans-serif; /* Use a clean and modern font */
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; /* White background for navbar */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #4a90e2; /* Blue background for navbar */
+    border-bottom: 2px solid #003366; /* Dark blue bottom border */
+}
+
+nav ul li {
+    padding: 15px 20px; /* Adjust padding */
+    margin: 0; /* Remove margin */
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners for each item */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensure padding is applied around text */
+}
+
+nav ul li:hover {
+    background-color: #003366; /* Dark blue background on hover */
+    color: #ffffff; /* Ensure text color remains white on hover */
+}
+
+nav ul li.active {
+    background-color: #003366; /* Dark blue background for active item */
+    color: #ffffff; /* White text color for active item */
+}
+
+
+thead {
+    background-color: #4a90e2; /* Blue background for table headers */
+    color: white; /* White text color for headers */
+}
+
+table {
+    border-collapse: separate; /* Allow spacing between cells */
+    border-spacing: 10px; /* Space between cells */
+    margin: 50px auto; /* Center table horizontally */
+    width: 80%; /* Adjust width as needed */
+    padding: 0; /* Remove padding for table */
+    background-color: #ffffff; /* White background for table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for the table */
+}
+
+th, td {
+    padding: 12px; /* Add padding inside cells */
+    border: 1px solid #ddd; /* Border for visibility */
+    text-align: center; /* Center text horizontally inside cells */
+}
+
+th {
+    background-color: #4a90e2; /* Blue background for headers */
+    color: white; /* White text color for headers */
+    border-radius: 8px; /* Rounded corners for headers */
+}
+
+td {
+    background-color: #f9f9f9; /* Light gray background for data cells */
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Alternate row color for better readability */
+}
+
+tr:hover {
+    background-color: #eaf2f8; /* Light blue background on hover */
+}
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.filter-form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4a90e2;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f9fc;
+    color: #333;
+    appearance: none;
+}
+
+.apply-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #357ab9;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px; /* Adds space between content and footer */
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials li {
+    display: inline;
+}
+
+.socials a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #4a90e2; /* Accent color on hover */
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #4a90e2;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4a90e2;
+}
+
+.box1{
+    box-shadow: -20px 11px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
